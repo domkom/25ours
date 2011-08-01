@@ -1,0 +1,40 @@
+void setup() {  
+  size(400, 400);  
+  stroke(0);  
+  smooth();
+
+  PFont fontA = loadFont("Arial");
+  int fontSize=20;
+  textFont(fontA, fontSize);
+}  
+void draw() {  
+  background(0);  
+  fill(255);  
+  noStroke(); 
+  ellipse(200, 200, 260, 260);
+  fill(196,0,0);
+  arc(200, 200, 260, 260, 0 - HALF_PI - TWO_PI/25, 0 - HALF_PI);
+  float s = map(second(), 0, 60, 0, TWO_PI) - HALF_PI;  
+  float m = map(minute(), 0, 60, 0, TWO_PI) - HALF_PI;  
+  float h = map(hour() % 25, 0, 25, 0, TWO_PI) - HALF_PI;  
+  stroke(0);  
+  strokeWeight(2);  
+  line(200, 200, cos(s) * 120 + 200, sin(s) * 120 + 200);  
+  strokeWeight(4);  
+  line(200, 200, cos(m) * 100 + 200, sin(m) * 100 + 200);  
+  strokeWeight(6);  
+  line(200, 200, cos(h) * 80 + 200, sin(h) * 80 + 200);
+
+  fill(255);
+  
+  float angle = -HALF_PI;
+  float angle_inc = TWO_PI / 25;
+  for ( int i = 0; i < 25; i++, angle += angle_inc ) {
+    text(i,192 + cos(angle) * 150,205 + sin(angle) * 150);
+  }
+
+  float angle_inc2 = TWO_PI / 12;
+  for ( int i = 0; i < 12; i++, angle += angle_inc2 ) {
+    point(200 + cos(angle) * 120,200 + sin(angle) * 120);
+  }
+}

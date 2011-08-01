@@ -1,0 +1,113 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>25ours.com</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta property="fb:admins" content="100000022253327,100000095683979,100000582130119" />
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+  <!-- CSS: implied media="all" -->
+  <link rel="stylesheet" href="css/style.css?v=2">
+
+  <!-- Uncomment if you are specifically targeting less enabled mobile browsers
+  <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
+
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
+  <script src="js/libs/modernizr-1.7.min.js"></script>
+
+  <script src="js/processing-1.2.3.min.js"></script>
+
+  <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+</head>
+
+<body>
+
+ <div id="container">
+   <header>
+     <canvas data-processing-sources="js/clock.pjs"></canvas>
+     <h1>25<span>(</span>h<span>)</span>ours</h1>
+     <h2>one hour is yours</h2>
+     <ul class="share">
+       <li><div id="fb-root"></div><fb:like href="25ours.com" send="false" layout="box_count" width="50" show_faces="false" font="arial"></fb:like></li>
+       <li><a href="http://twitter.com/share" class="twitter-share-button" data-text="25 hours - 1 hour is yours" data-count="vertical">Tweet</a></li>
+       <li><g:plusone size="tall"></g:plusone></li>
+     </ul>
+   </header>
+   <div id="main" role="main">
+     <dl>
+        <dt>Problem</dt>
+        <dd>What if we had one extra hour? An hour to do the things we love to do. Those things we postpone because there are always more urgent things to do. Those things we would do if we had just more time.</dd>
+        <dt>Idea</dt>
+        <dd>Save a little time each hour and spent it at a stretch for exactly those things. Have a <em>25 hour day</em>.</dd>
+        <dt>Solution</dt>
+        <dd>The <em>25 hour</em> clock wrests <em>2.4 minutes per hour</em> away in order to give you an extra hour at the end of the day. One hour is yours!</dd>
+        <dt>Result</dt>
+        <dd>Saving an hour a day results in <em>365 hours a year</em> – which are <em>15.208333 days a year</em>. That’s a nice vacation laying somewhere at the beach chilling, or hanging around with friends having a BBQ, reading a book, watching the clouds, dreaming away...</dd>
+      </dl>
+   </div>
+   <div class="comments">
+     <div id="fb-root"></div><fb:comments href="25ours.com" num_posts="5" width="850" colorscheme="dark"></fb:comments>
+   </div>
+   <footer>
+     <div class="info">
+       <span class="copyright">Copyright &copy; 2011</span>
+       <p>from the minds behind <a href="http://informationandvisualization.de" alt="informationandvisualization.de">informationandvisualization.de</a></p>
+     </div>
+   </footer>
+ </div> <!--! end of #container -->
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts-->
+
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+
+  <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    var _gaq=[["_setAccount","UA-24865141-1"],["_trackPageview"]];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+    s.parentNode.insertBefore(g,s)}(document,"script"));
+  </script>
+
+  <!-- share button -->
+  <script src="http://connect.facebook.net/en_US/all.js#appId=130060337084301&amp;xfbml=1"></script>
+  <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+  
+  <!-- facebook comments -->
+  <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+  
+</body>
+</html>
